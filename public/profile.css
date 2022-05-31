@@ -188,8 +188,6 @@ body>div>div:nth-child(2)>div:nth-child(1) {
     height: 11vh;
 }
 
-div:nth-child(2)>div:nth-child(2) {}
-
 button {
     font-size: 1.4em;
     height: 4.6vh;
