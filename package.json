@@ -1,0 +1,55 @@
+{
+  "name": "full-stack-server-2",
+  "version": "1.0.0",
+  "description": "full stack server 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwcII/full-stack-server-2.git"
+  },
+  "author": "fwcII",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fwcII/full-stack-server-2/issues"
+  },
+  "homepage": "https://github.com/fwcII/full-stack-server-2#readme",
+  "dependencies": {
+    "application.js": "^1.5.2",
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.0",
+    "cjs": "^0.0.11",
+    "configdb": "^0.2.4",
+    "connect-flash": "^0.1.1",
+    "cookie": "^0.5.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "env": "^0.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-static": "^1.2.6",
+    "express.js": "^1.0.0",
+    "index.js": "^0.0.3",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0",
+    "node": "^17.7.2",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^2.0.16",
+    "package-json": "^7.0.0",
+    "parser": "^0.1.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "port": "^0.8.1",
+    "serve-static": "^1.15.0",
+    "server.js": "^1.0.0",
+    "session": "^0.1.0",
+    "static": "^2.0.0",
+    "view.js": "^4.1.0"
+  }
+}

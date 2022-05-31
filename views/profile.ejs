@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>Resilient Coders Morals:</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+      <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div >
+
+    <div >
+        <h1><span class="fa fa-"></span> Profile Page</h1>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div>
+
+        <!-- LOCAL INFORMATION -->
+        <div>
+            <div>
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div>
+         <h2>Resilient Morals: Mr morals & The Big Steppers</h2>
+        <% if (user.local.email) { %>
+          <form action="/morals" method="POST">
+            <input type="text" value="<%= user.local.email %>" placeholder="Who are you?" name="stepper">
+            <input type="text" placeholder="How do you Grieve?" name="grief">
+            <button class="push" type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+          <ul class="morals">
+          <% for(var i=0; i<morals.length; i++) {%>
+            <li class="morals">
+              <span><%= morals[i].name %></span>
+              <span><%= morals[i].grief %></span>
+              <span><%= morals[i].love %></span>
+              <span><i id="love" class="fa fa-heart" aria-hidden="true"></i></span>
+              <span><i class="fa fa-ban" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
