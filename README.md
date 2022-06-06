@@ -12,7 +12,6 @@
 1. run `node server.js`
 2. Navigate to `localhost:8080`
 
-## Credit
+## Languages
 
-Languages used
 HTML, CSS, Javascript, Express, Node.js, Mongodb
